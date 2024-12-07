@@ -1,0 +1,104 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #0b1d31;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.bookmark {
+    background-color: #102a43;
+    color: #ffffff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bookmark .title-url {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.bookmark h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #e3eaf6;
+    flex-shrink: 0;
+}
+
+.bookmark a {
+    color: #5b9bd5;
+    text-decoration: none;
+    font-size: 14px;
+    word-wrap: break-word;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.bookmark a:hover {
+    text-decoration: underline;
+}
+
+.bookmark .buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.update-url-button,
+.update-title-button,
+.delete-button {
+    background-color: #1e4e8c;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.update-url-button:hover,
+.update-title-button:hover,
+.delete-button:hover {
+    background-color: #163e6b;
+    transform: scale(1.05);
+}
+
+.update-url-button:active,
+.update-title-button:active,
+.delete-button:active {
+    background-color: #0f2c4d;
+    transform: scale(1);
+}
+
+.delete-button {
+    background-color: #ff5e57;
+}
+
+.delete-button:hover {
+    background-color: #e53e3e;
+}
+
+p {
+    color: #ff6f61;
+    font-size: 16px;
+    margin: 20px;
+    text-align: center;
+}
